@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="p-2.5 grid grid-cols-[1fr_3fr] gap-4" style="grid-template-rows: auto auto auto auto auto; grid-template-areas: 'header header' 'navbar home' 'navbar blog' 'navbar content' 'navbar about';">
+    <h1 class="font-sans text-5xl" style="grid-area: header;">Welcome to My Website</h1>
+
+    <nav class="flex flex-col gap-2.5" style="grid-area: navbar;">
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#content">Content</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div id="home" class="border border-gray-400 rounded-lg p-2.5 h-full bg-blue-100" style="grid-area: home;">
+        <h2 class="font-bold">Home Section</h2>
+        <p>This is the home section of the website.</p>
+    </div>
+
+    <div id="blog" class="border border-gray-400 rounded-lg p-2.5 h-full bg-blue-100" style="grid-area: blog;">
+        <h2 class="font-bold">Blog Section</h2>
+        <p>This is the blog section of the website.</p>
+
+        <div class="border border-gray-400 rounded-lg p-2.5 flex gap-2.5 flex-wrap m-2">
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 1</h3>
+                <p>Content of blog post 1...</p>
+            </div>
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 2</h3>
+                <p>Content of blog post 2...</p>
+            </div>
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 3</h3>
+                <p>Content of blog post 3...</p>
+            </div>
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 4</h3>
+                <p>Content of blog post 4...</p>
+            </div>
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 5</h3>
+                <p>Content of blog post 5...</p>
+            </div>
+            <div class="p-2.5 bg-yellow-100 rounded-lg w-64 h-44">
+                <h3>Blog Post 6</h3>
+                <p>Content of blog post 6...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="border border-gray-400 rounded-lg p-2.5 h-full bg-blue-100" style="grid-area: content;">
+        <h2 class="font-bold">Content Section</h2>
+        <p>This is the content section of the website.</p>
+    </div>
+
+    <div id="about" class="border border-gray-400 rounded-lg p-2.5 h-full bg-blue-100" style="grid-area: about;">
+        <h2 class="font-bold">About Section</h2>
+        <p>This is the about section of the website.</p>
+    </div>
+</body>
+</html>
